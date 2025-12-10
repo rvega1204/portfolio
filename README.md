@@ -38,7 +38,7 @@ Follow these steps to set up the project locally.
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/rvega1204/portfolio.git
     cd portfolio
     ```
 
@@ -77,6 +77,40 @@ portfolio/
 ├── tsconfig.json       # TypeScript configuration
 └── README.md           # Project documentation
 ```
+
+## 🎨 Customization
+
+This portfolio is designed as a template that can be adapted for learning purposes. Key areas to customize:
+
+- **Personal Information**: Update contact details, bio, and social links in `app/page.tsx`
+- **Color Scheme**: Modify Tailwind colors in the component to match your brand
+- **Content Sections**: Add or remove sections based on your needs
+- **Animations**: Adjust transition durations and effects
+
+## 📝 License
+
+This project is licensed under a **Modified MIT License for Non-Commercial Use Only**.
+
+### 🎓 Usage Rights
+
+**Permitted Uses** ✅
+
+- Personal study and learning
+- Educational purposes in academic settings
+- Portfolio inspiration and reference
+- Code examples for learning React/Next.js
+- Non-commercial open source contributions
+
+**Prohibited Uses** ❌
+
+- Commercial use or sale of this code
+- Using in revenue-generating products/services
+- Reselling or licensing as a template
+- Using as part of commercial portfolio services
+
+For commercial use inquiries, please contact [vegagarrido@gmail.com](mailto:vegagarrido@gmail.com).
+
+See the [LICENSE](LICENSE) file for full details.
 
 ## 👤 Author
 
