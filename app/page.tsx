@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Code, Cloud, Database, GitBranch, Award, Briefcase, GraduationCap } from 'lucide-react';
 
@@ -96,84 +97,84 @@ export default function Portfolio() {
       </div>
 
       {/* Hero Section */}
-      <header className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+      <header className="relative min-h-screen flex items-center justify-center px-4 md:px-6 overflow-hidden">
         <div className={`max-w-7xl w-full transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left side - Text */}
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               <div className="space-y-4">
                 <div className="inline-block px-4 py-2 bg-cyan-500/10 border border-cyan-500/20 rounded-full mb-4">
-                  <span className="text-cyan-400 text-sm font-medium tracking-wider">SOFTWARE ENGINEER</span>
+                  <span className="text-cyan-400 text-xs md:text-sm font-medium tracking-wider">SOFTWARE ENGINEER</span>
                 </div>
-                <h1 className="text-7xl lg:text-8xl font-black tracking-tight">
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight">
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
                     Ricardo
                   </span>
                   <span className="block text-slate-100">Vega Garrido</span>
                 </h1>
-                <p className="text-xl lg:text-2xl text-slate-400 leading-relaxed max-w-xl">
+                <p className="text-lg md:text-xl lg:text-2xl text-slate-400 leading-relaxed max-w-xl">
                   13+ years building scalable microservices, cloud infrastructure, and DevOps solutions
                 </p>
               </div>
 
               {/* Contact Info */}
-              <div className="flex flex-wrap gap-4 text-slate-400">
+              <div className="flex flex-wrap gap-3 md:gap-4 text-slate-400 text-sm md:text-base">
                 <a href="mailto:vegagarrido@gmail.com" className="flex items-center gap-2 hover:text-cyan-400 transition-colors">
-                  <Mail size={18} />
-                  <span className="text-sm">vegagarrido@gmail.com</span>
+                  <Mail size={16} className="md:w-[18px] md:h-[18px]" />
+                  <span className="text-xs md:text-sm">vegagarrido@gmail.com</span>
                 </a>
                 <a href="tel:+50683109285" className="flex items-center gap-2 hover:text-cyan-400 transition-colors">
-                  <Phone size={18} />
-                  <span className="text-sm">(506) 8310 9285</span>
+                  <Phone size={16} className="md:w-[18px] md:h-[18px]" />
+                  <span className="text-xs md:text-sm">(506) 8310 9285</span>
                 </a>
                 <div className="flex items-center gap-2">
-                  <MapPin size={18} />
-                  <span className="text-sm">San Jose, Costa Rica</span>
+                  <MapPin size={16} className="md:w-[18px] md:h-[18px]" />
+                  <span className="text-xs md:text-sm">San Jose, Costa Rica</span>
                 </div>
               </div>
 
               {/* Social Links */}
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                 <a 
                   href="https://github.com/rvega1204" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-3 px-6 py-3 bg-slate-800/50 border border-slate-700 rounded-xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300"
+                  className="group flex items-center justify-center gap-3 px-5 md:px-6 py-3 bg-slate-800/50 border border-slate-700 rounded-xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300"
                 >
-                  <Github className="group-hover:text-cyan-400 transition-colors" size={20} />
-                  <span className="font-medium">GitHub</span>
-                  <ExternalLink size={16} className="opacity-50 group-hover:opacity-100 transition-opacity" />
+                  <Github className="group-hover:text-cyan-400 transition-colors" size={18} />
+                  <span className="font-medium text-sm md:text-base">GitHub</span>
+                  <ExternalLink size={14} className="opacity-50 group-hover:opacity-100 transition-opacity" />
                 </a>
                 <a 
                   href="https://www.linkedin.com/in/ricardo-vega-garrido-02ab1a4a/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-3 px-6 py-3 bg-slate-800/50 border border-slate-700 rounded-xl hover:border-blue-500/50 hover:bg-slate-800 transition-all duration-300"
+                  className="group flex items-center justify-center gap-3 px-5 md:px-6 py-3 bg-slate-800/50 border border-slate-700 rounded-xl hover:border-blue-500/50 hover:bg-slate-800 transition-all duration-300"
                 >
-                  <Linkedin className="group-hover:text-blue-400 transition-colors" size={20} />
-                  <span className="font-medium">LinkedIn</span>
-                  <ExternalLink size={16} className="opacity-50 group-hover:opacity-100 transition-opacity" />
+                  <Linkedin className="group-hover:text-blue-400 transition-colors" size={18} />
+                  <span className="font-medium text-sm md:text-base">LinkedIn</span>
+                  <ExternalLink size={14} className="opacity-50 group-hover:opacity-100 transition-opacity" />
                 </a>
               </div>
             </div>
 
             {/* Right side - Stats Cards */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-2xl p-6 backdrop-blur-sm">
-                <div className="text-5xl font-black text-cyan-400 mb-2">13+</div>
-                <div className="text-slate-400 text-sm">Years Experience</div>
+            <div className="grid grid-cols-2 gap-3 md:gap-4">
+              <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-2xl p-4 md:p-6 backdrop-blur-sm">
+                <div className="text-4xl md:text-5xl font-black text-cyan-400 mb-2">13+</div>
+                <div className="text-slate-400 text-xs md:text-sm">Years Experience</div>
               </div>
-              <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-6 backdrop-blur-sm">
-                <div className="text-5xl font-black text-purple-400 mb-2">5</div>
-                <div className="text-slate-400 text-sm">Companies</div>
+              <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-4 md:p-6 backdrop-blur-sm">
+                <div className="text-4xl md:text-5xl font-black text-purple-400 mb-2">5</div>
+                <div className="text-slate-400 text-xs md:text-sm">Companies</div>
               </div>
-              <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-2xl p-6 backdrop-blur-sm">
-                <div className="text-5xl font-black text-green-400 mb-2">20+</div>
-                <div className="text-slate-400 text-sm">Technologies</div>
+              <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-2xl p-4 md:p-6 backdrop-blur-sm">
+                <div className="text-4xl md:text-5xl font-black text-green-400 mb-2">20+</div>
+                <div className="text-slate-400 text-xs md:text-sm">Technologies</div>
               </div>
-              <div className="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-6 backdrop-blur-sm">
-                <div className="text-5xl font-black text-orange-400 mb-2">15+</div>
-                <div className="text-slate-400 text-sm">Certifications</div>
+              <div className="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-4 md:p-6 backdrop-blur-sm">
+                <div className="text-4xl md:text-5xl font-black text-orange-400 mb-2">15+</div>
+                <div className="text-slate-400 text-xs md:text-sm">Certifications</div>
               </div>
             </div>
           </div>
@@ -189,13 +190,13 @@ export default function Portfolio() {
 
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex justify-center gap-2">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="flex justify-start md:justify-center gap-2 overflow-x-auto scrollbar-hide">
             {['about', 'skills', 'experience', 'education', 'certifications'].map((section) => (
               <button
                 key={section}
                 onClick={() => setActiveSection(section)}
-                className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${
+                className={`px-4 md:px-6 py-2 rounded-lg font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
                   activeSection === section
                     ? 'bg-cyan-500 text-slate-950'
                     : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800'
@@ -209,12 +210,12 @@ export default function Portfolio() {
       </nav>
 
       {/* Main Content */}
-      <main className="relative max-w-7xl mx-auto px-6 py-20">
+      <main className="relative max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-20">
         {/* About Section */}
         {activeSection === 'about' && (
           <section className="space-y-12 animate-[fadeIn_0.5s_ease-in]">
             <div className="space-y-6">
-              <h2 className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
                 Professional Summary
               </h2>
               <div className="bg-slate-800/30 border border-slate-700/50 rounded-2xl p-8 backdrop-blur-sm">
@@ -250,7 +251,7 @@ export default function Portfolio() {
         {/* Skills Section */}
         {activeSection === 'skills' && (
           <section className="space-y-12 animate-[fadeIn_0.5s_ease-in]">
-            <h2 className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
               Technical Skills
             </h2>
             
@@ -335,7 +336,7 @@ export default function Portfolio() {
         {/* Experience Section */}
         {activeSection === 'experience' && (
           <section className="space-y-12 animate-[fadeIn_0.5s_ease-in]">
-            <h2 className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
               Work Experience
             </h2>
             
@@ -369,7 +370,7 @@ export default function Portfolio() {
         {/* Education Section */}
         {activeSection === 'education' && (
           <section className="space-y-12 animate-[fadeIn_0.5s_ease-in]">
-            <h2 className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
               Education
             </h2>
             
@@ -406,7 +407,7 @@ export default function Portfolio() {
         {/* Certifications Section */}
         {activeSection === 'certifications' && (
           <section className="space-y-12 animate-[fadeIn_0.5s_ease-in]">
-            <h2 className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
               Professional Development
             </h2>
             
@@ -459,6 +460,17 @@ export default function Portfolio() {
             opacity: 1;
             transform: translateY(0);
           }
+        }
+        
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .scrollbar-hide {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
         }
       `}</style>
     </div>
