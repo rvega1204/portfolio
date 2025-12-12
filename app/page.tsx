@@ -16,7 +16,7 @@ export default function Portfolio() {
     frameworks: ['Spring Boot', 'React', 'Node.js', 'NextJS', 'AngularJS', 'jQuery', 'Bootstrap'],
     cloud: ['AWS (SNS, Lambda, S3)', 'Terraform', 'Kubernetes', 'Docker', 'Airflow', 'Jenkins'],
     databases: ['MySQL', 'PostgreSQL', 'Oracle', 'MongoDB'],
-    tools: ['Git', 'Kafka', 'Splunk', 'New Relic', 'Selenium', 'JUnit', 'Mockito']
+    tools: ['Git', 'Kafka', 'Splunk', 'New Relic', 'Selenium', 'JUnit', 'Mockito', 'n8n']
   };
 
   const experience = [
