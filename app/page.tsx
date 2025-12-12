@@ -83,10 +83,11 @@ export default function Portfolio() {
   ];
 
   const certifications = [
+    { category: 'AI & Automation', items: ['n8n Workflow Automation & AI (2025)', 'PyTorch (2021)'] },
     { category: 'Cloud & DevOps', items: ['Azure DevOps (2024)', 'Docker & Kubernetes (2021)', 'Data Engineer Bootcamp (2025)', 'Apache Airflow 3 (2025)', 'Terraform (2025)'] },
     { category: 'Backend', items: ['Spring Boot 3 (2025)', 'Java Design Patterns (2025)', 'SOLID Principles (2025)', 'Unit Testing with Mockito (2025)', 'Go Master (2024)'] },
     { category: 'Frontend & Testing', items: ['NextJS (2025)', 'AEM Developer (2025)', 'Selenium WebDriver (2024)', 'React & NodeJS (2024)', 'React MERN (2021)'] },
-    { category: 'Other', items: ['Application Security (2022)', 'Scrum Product Owner Certiprof (2023)', 'PyTorch (2021)'] }
+    { category: 'Other', items: ['Application Security (2022)', 'Scrum Product Owner Certiprof (2023)'] }
   ];
 
   return (
